@@ -6,7 +6,7 @@
 #    By: npineau <npineau@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/20 12:15:41 by npineau           #+#    #+#              #
-#    Updated: 2015/01/23 13:01:48 by npineau          ###   ########.fr        #
+#    Updated: 2015/03/29 15:45:22 by npineau          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ INC			:=	$(DIRINC)/libmtx.h
 ### FILES: SOURCES ###
 
 include $(DIRMSC)/sources.mk
-#include $(DIRMATH)/sources.mk
+include $(DIRMATH)/sources.mk
 
 ### FILES: PATHS ###
 

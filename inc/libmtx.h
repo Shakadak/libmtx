@@ -8,4 +8,9 @@ typedef struct	s_mtx
 	double		*mtx;
 }				t_mtx;
 
+t_mtx	mtx_product(t_mtx const lhs, t_mtx const rhs);
+
+void	mtx_free(t_mtx const mtx);
+t_mtx	mtx_new(int const row, int const col);
+
 #endif
