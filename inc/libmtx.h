@@ -10,6 +10,7 @@ typedef struct	s_mtx
 
 t_mtx	mtx_identity(unsigned int const size);
 t_mtx	mtx_product(t_mtx const lhs, t_mtx const rhs);
+t_mtx	mtx_scalar_mult(double const lambda, t_mtx const mtx);
 t_mtx	mtx_transpose(t_mtx const mtx);
 
 void	mtx_free(t_mtx const mtx);
