@@ -19,8 +19,11 @@ t_mtx	mtx_product(t_mtx const lhs, t_mtx const rhs)
 			{
 				product.mtx[i * product.col + j] += lhs.mtx[i * lhs.col + k]
 					* rhs.mtx[k * rhs.col + j];
+				++k;
 			}
+			++j;
 		}
+		++i;
 	}
 	return (product);
 }
