@@ -1,4 +1,5 @@
-MATH	:=	mtx_product.c
+MATH	:=	mtx_product.c \
+			mtx_transpose.c
 
 OBJ := $(OBJ) $(MATH:.c=.o)
 
