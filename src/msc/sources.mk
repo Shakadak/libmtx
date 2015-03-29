@@ -1,4 +1,5 @@
-MSC	:=	mtx_new.c
+MSC	:=	mtx_free.c \
+		mtx_new.c
 
 OBJ := $(OBJ) $(MSC:.c=.o)
 
