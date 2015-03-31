@@ -4,7 +4,8 @@ MATH	:=	mtx_add.c \
 			mtx_product.c \
 			mtx_scalar_mult.c \
 			mtx_sub.c \
-			mtx_transpose.c
+			mtx_transpose.c \
+			vec_dot.c
 
 OBJ := $(OBJ) $(MATH:.c=.o)
 
