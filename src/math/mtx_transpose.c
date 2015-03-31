@@ -2,9 +2,9 @@
 
 t_mtx	mtx_transpose(t_mtx const mtx)
 {
-	t_mtx	transposed;
-	int		i;
-	int		j;
+	t_mtx			transposed;
+	unsigned int	i;
+	unsigned int	j;
 
 	transposed = mtx_new(mtx.col, mtx.row);
 	i = 0;
