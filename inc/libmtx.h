@@ -25,6 +25,7 @@ t_mtx			mtx_transpose(t_mtx const mtx);
 
 double			vec_dot(t_mtx const lh, t_mtx const rh);
 
+t_mtx			mtx_dup(t_mtx const src);
 void			mtx_free(t_mtx const mtx);
 t_mtx			mtx_new(int const row, int const col);
 
