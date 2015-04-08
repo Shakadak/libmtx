@@ -2,6 +2,8 @@
 # define LIBMTX_H
 
 /*
+** Note; This branch doesn't use any allocation and therefor can only
+** handle 16 number at most.
 ** Convention:
 ** - Matrices are stored as row major.
 ** - Vectors are column vector.
@@ -11,7 +13,7 @@ typedef struct	s_mtx
 {
 	unsigned int	row;
 	unsigned int	col;
-	double			*mtx;
+	double			mtx[16];
 }				t_mtx;
 
 t_mtx			mtx_add(t_mtx const lh, t_mtx const rh);
@@ -26,7 +28,6 @@ t_mtx			mtx_transpose(t_mtx const mtx);
 double			vec_dot(t_mtx const lh, t_mtx const rh);
 
 t_mtx			mtx_dup(t_mtx const src);
-void			mtx_free(t_mtx const mtx);
 t_mtx			mtx_new(int const row, int const col);
 
 #endif
