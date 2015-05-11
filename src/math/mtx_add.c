@@ -13,7 +13,7 @@ t_mtx	mtx_add(t_mtx const lh, t_mtx const rh)
 		j = 0;
 		while (j < sum.col)
 		{
-			sum.mtx[i * sum.col + j]  = lh.mtx[i * lh.col + j] + rh.mtx[j * rh.col + j];
+			sum.mtx[i * sum.col + j]  = lh.mtx[i * lh.col + j] + rh.mtx[i * rh.col + j];
 			++j;
 		}
 		++i;
