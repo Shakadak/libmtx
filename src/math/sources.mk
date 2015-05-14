@@ -1,4 +1,6 @@
 MATH	:=	mtx_add.c \
+			mtx_adjugate.c \
+			mtx_cofactor.c \
 			mtx_determinant.c \
 			mtx_dot.c \
 			mtx_identity.c \
