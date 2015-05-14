@@ -7,11 +7,11 @@
 
 double	mtx_determinant(t_mtx const mtx)
 {
-	double	determinant;
-	double	minor;
-	int		i;
+	double			determinant;
+	double			minor;
+	unsigned int	i;
 
-	if (mtx.col = 2)
+	if (mtx.col == 2)
 	{
 		determinant = mtx.mtx[0 * 2 + 0] * mtx.mtx[1 * 2 + 1]
 			- mtx.mtx[0 * 2 + 1] * mtx.mtx[1 * 2 + 0];
@@ -23,7 +23,8 @@ double	mtx_determinant(t_mtx const mtx)
 		while (i < mtx.col)
 		{
 			minor = mtx_minor(mtx, 0, i);
-			determinant += mtx * minor * (i % 2 ? -1.0 : 1.0);
+			determinant += mtx.mtx[0 * mtx.col + i] * minor
+				* (i % 2 ? -1.0 : 1.0);
 			++i;
 		}
 	}

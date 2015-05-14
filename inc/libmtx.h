@@ -21,7 +21,9 @@ double			mtx_determinant(t_mtx const mtx);
 double			mtx_dot(t_mtx const lh, unsigned int const i, t_mtx const rh,
 		unsigned int j);
 t_mtx			mtx_identity(unsigned int const size);
-double			mtx_minor(t_mtx const mtx, int const row, int const col);
+double			mtx_minor(t_mtx const mtx,
+		unsigned int const row,
+		unsigned int const col);
 t_mtx			mtx_product(t_mtx const lh, t_mtx const rh);
 t_mtx			mtx_scalar_mult(double const lambda, t_mtx const mtx);
 t_mtx			mtx_sub(t_mtx const lh, t_mtx const rh);

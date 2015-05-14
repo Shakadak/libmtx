@@ -1,8 +1,8 @@
 MATH	:=	mtx_add.c \
-			mtx_determinant.c
+			mtx_determinant.c \
 			mtx_dot.c \
 			mtx_identity.c \
-			mtx_minor.c
+			mtx_minor.c \
 			mtx_product.c \
 			mtx_scalar_mult.c \
 			mtx_sub.c \
