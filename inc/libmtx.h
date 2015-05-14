@@ -17,7 +17,8 @@ typedef struct	s_mtx
 }				t_mtx;
 
 t_mtx			mtx_add(t_mtx const lh, t_mtx const rh);
-double	mtx_cofactor(t_mtx const mtx,
+t_mtx			mtx_adjoint(t_mtx const mtx);
+double			mtx_cofactor(t_mtx const mtx,
 		unsigned int const row,
 		unsigned int const col);
 double			mtx_determinant(t_mtx const mtx);
