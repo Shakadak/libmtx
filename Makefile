@@ -6,7 +6,7 @@
 #    By: npineau <npineau@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/20 12:15:41 by npineau           #+#    #+#              #
-#    Updated: 2015/03/29 15:45:22 by npineau          ###   ########.fr        #
+#    Updated: 2015/05/16 14:46:47 by npineau          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,10 +64,10 @@ $(DIROBJ):
 	mkdir $(DIROBJ)
 
 clean:
-	@(rm -f $(POBJ))
+	rm -f $(POBJ)
 
 fclean: clean
-	@(rm -f $(NAME))
+	rm -f $(NAME)
 
 re: fclean $(NAME)
 
